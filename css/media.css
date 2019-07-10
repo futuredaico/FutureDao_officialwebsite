@@ -265,7 +265,7 @@
     transition: height 0.5s,padding 0.5s;
   }
   header .right.active {
-    height: 230px;
+    height: 270px;
     padding: 50px 50px 40px 50px;
   }
   header .right .close-icon {
