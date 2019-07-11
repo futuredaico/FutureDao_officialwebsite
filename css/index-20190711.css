@@ -153,6 +153,23 @@ header .right .language-toggle .select-country ul li a {
 .content-one .contentone-list .clist-wrapper .clist-img img {
   height: 100%;
 }
+.content-one .link-list {
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px 0 rgba(102, 89, 203, 0.5);
+  border-radius: 35px;
+  width: 50px;
+  position: fixed;
+  top: 220px;
+  right: 78px;
+}
+.content-one .link-list ul li a img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+.content-one .link-list-mobile {
+  display: none;
+}
 .content-other {
   width: 100%;
   min-width: 1045px;

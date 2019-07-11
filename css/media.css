@@ -166,7 +166,7 @@
   }
   footer .footer-wrap .footer-bottom ul li {
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-top: 22px;
   }
   footer .footer-wrap .footer-bottom ul li a {
@@ -345,6 +345,53 @@
   }
   .content-one .contentone-list .clist-wrapper .clist-img img {
     height: 100%;
+  }
+  .content-one .link-list {
+    display: none;
+  }
+  .content-one .link-list-mobile {
+    display: inline-block;
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px 0 rgba(102, 89, 203, 0.5);
+    border-radius: 35px;
+    width: 40px;
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+  }
+  .content-one .link-list-mobile .open-wrap {
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px 0 rgba(102, 89, 203, 0.5);
+    border-radius: 35px;
+  }
+  .content-one .link-list-mobile .open-wrap .open-img {
+    width: 30px;
+    padding: 5px;
+  }
+  .content-one .link-list-mobile ul {
+    height: 0;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+    overflow: hidden;
+  }
+  .content-one .link-list-mobile ul li a img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  .content-one .link-list-mobile ul li a .packup-img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  .content-one .link-list-mobile .open-list {
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+    height: 200px;
   }
   .content-other {
     width: 3.75rem;

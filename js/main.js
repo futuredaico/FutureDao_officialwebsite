@@ -9,6 +9,8 @@ var app = {
         // this.onScrollNav();
         //
         this.onToggleMenu();
+        // 收起与展开
+        this.onOpenList();
     },
     onNavClick: function ()
     {
@@ -33,9 +35,11 @@ var app = {
         $("#language").on("click", function ()
         {
             flag = !flag;
-            if(flag){
+            if (flag)
+            {
                 $("#selectlang").show();
-            }else{
+            } else
+            {
                 $("#selectlang").hide();
             }
         })
@@ -60,23 +64,23 @@ var app = {
             {
                 $("#nav").find('li').removeClass('active');
                 $("ul li[data-boxid=team]").addClass('active');
-            }else if ($(document).scrollTop() >= databankHeight)
+            } else if ($(document).scrollTop() >= databankHeight)
             {
                 $("#nav").find('li').removeClass('active');
                 $("ul li[data-boxid=data-bank]").addClass('active');
-            }else if ($(document).scrollTop() >= projectHeight)
+            } else if ($(document).scrollTop() >= projectHeight)
             {
                 $("#nav").find('li').removeClass('active');
                 $("ul li[data-boxid=project]").addClass('active');
-            }else if ($(document).scrollTop() >= auditHeight)
+            } else if ($(document).scrollTop() >= auditHeight)
             {
                 $("#nav").find('li').removeClass('active');
                 $("ul li[data-boxid=audit]").addClass('active');
-            }else if ($(document).scrollTop() >= aboutHeight)
+            } else if ($(document).scrollTop() >= aboutHeight)
             {
                 $("#nav").find('li').removeClass('active');
                 $("ul li[data-boxid=about]").addClass('active');
-            }else if ($(document).scrollTop() >= welcomeHeight)
+            } else if ($(document).scrollTop() >= welcomeHeight)
             {
                 $("#nav").find('li').removeClass('active');
                 $("ul li[data-boxid=welcome]").addClass('active');
@@ -84,12 +88,28 @@ var app = {
 
         })
     },
-    onToggleMenu(){
-        $("#menu").on('click',function(){
+    onToggleMenu()
+    {
+        $("#menu").on('click', function ()
+        {
             $("#right").addClass("active");
         })
-        $("#closeBtn").on('click',function(){
+        $("#closeBtn").on('click', function ()
+        {
             $("#right").removeClass("active");
+        })
+    },
+    onOpenList()
+    {
+        $("#open").on('click', function ()
+        {
+            $("#openul").addClass("open-list");
+            $("#open").hide();
+        })
+        $("#packup").on('click', function ()
+        {
+            $("#openul").removeClass("open-list");
+            $("#open").show();
         })
     }
 }
